@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Rahmat Surya Putra Dilaga</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100">
+
+    <!-- Header / Navbar -->
+    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50">
+        <nav class="container mx-auto flex items-center justify-between p-4">
+            <a href="#home" class="text-2xl font-bold text-sky-400">
+                Rahmat Surya Putra Dilaga
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="hover:text-sky-400 transition duration-300">Tentang Saya</a>
+                <a href="#projects" class="hover:text-sky-400 transition duration-300">Proyek</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 px-4 py-2 rounded-md font-semibold transition duration-300">Hubungi Saya</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#about" class="block p-4 text-center hover:bg-slate-700">Tentang Saya</a>
+            <a href="#projects" class="block p-4 text-center hover:bg-slate-700">Proyek</a>
+            <a href="#contact" class="block p-4 text-center hover:bg-slate-700">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 text-center md:text-left">
+            <div class="md:w-1/2">
+                <span class="text-sky-400 font-semibold">Web Developer & UI/UX Enthusiast</span>
+                <h1 class="text-4xl md:text-6xl font-bold mt-2 mb-4">Selamat Datang di Portofolio Saya</h1>
+                <p class="text-slate-400 mb-8 max-w-lg mx-auto md:mx-0">
+                    Saya adalah seorang pengembang web yang bersemangat dalam menciptakan aplikasi web yang fungsional, modern, dan ramah pengguna.
+                </p>
+                <a href="#projects" class="bg-sky-500 hover:bg-sky-600 px-6 py-3 rounded-md font-semibold transition duration-300 inline-block">
+                    Lihat Proyek Saya
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img 
+                    src="foto/agas2.png" 
+    alt="Foto profil Anda"
+    onerror="this.onerror=null;this.src='https://placehold.co/400x400/1e293b/ffffff?text=Gagal+Muat';"
+                    class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-8 border-slate-700 shadow-lg"
+                >
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-4">Tentang Saya</h2>
+            <p class="text-slate-400 text-center max-w-3xl mx-auto mb-12">
+                Saya adalah mahasiswa dari INSTIKI yang memiliki minat besar dalam dunia pemrograman website dan teknologi informasi. Sejak mengenal dasar-dasar HTML dan CSS, saya terus mengembangkan kemampuan saya dengan mempelajari berbagai bahasa pemrograman seperti PHP, Python, dan Java, serta framework Laravel. Selain pengembangan web, saya juga memiliki keahlian dalam pengolahan data menggunakan Excel dan Pentaho. Dengan semangat belajar yang tinggi, saya terus berusaha mengasah keterampilan teknis dan memperluas wawasan di bidang teknologi untuk menciptakan solusi yang inovatif dan bermanfaat.
+            </p>
+            <div class="max-w-4xl mx-auto bg-slate-800 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6 text-sky-400">Keahlian Saya</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    <!-- Contoh Keahlian -->
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-brands fa-html5 text-3xl text-orange-500"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-brands fa-css3-alt text-3xl text-blue-500"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-brands fa-php text-3xl text-indigo-400"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-brands fa-laravel text-3xl text-red-500"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-database text-3xl text-blue-300"></i>
+                        <span>Pentaho</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-file-excel text-3xl text-green-500"></i>
+                        <span>Excel</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-brands fa-python text-3xl text-yellow-400"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="bg-slate-700 p-4 rounded-lg flex items-center gap-4 hover:scale-105 transition-transform duration-300">
+                        <i class="fa-brands fa-java text-3xl text-red-400"></i>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-12">Proyek-proyek Saya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1e293b/ffffff?text=Proyek+1" alt="Gambar Proyek 1" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/ffffff?text=Gagal+Muat';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Nama Proyek 1</h3>
+                        <p class="text-slate-400 mb-4">Deskripsi singkat tentang proyek ini. Teknologi yang digunakan, dan tantangan yang dihadapi.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-sky-400 hover:underline">Lihat Live</a>
+                            <a href="#" class="text-sky-400 hover:underline">Kode di GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1e293b/ffffff?text=Proyek+2" alt="Gambar Proyek 2" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/ffffff?text=Gagal+Muat';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Nama Proyek 2</h3>
+                        <p class="text-slate-400 mb-4">Deskripsi singkat tentang proyek ini. Teknologi yang digunakan, dan tantangan yang dihadapi.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-sky-400 hover:underline">Lihat Live</a>
+                            <a href="#" class="text-sky-400 hover:underline">Kode di GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://placehold.co/600x400/1e293b/ffffff?text=Proyek+3" alt="Gambar Proyek 3" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/ffffff?text=Gagal+Muat';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Nama Proyek 3</h3>
+                        <p class="text-slate-400 mb-4">Deskripsi singkat tentang proyek ini. Teknologi yang digunakan, dan tantangan yang dihadapi.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-sky-400 hover:underline">Lihat Live</a>
+                            <a href="#" class="text-sky-400 hover:underline">Kode di GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <h2 class="text-3xl font-bold text-center mb-4">Hubungi Saya</h2>
+            <p class="text-slate-400 text-center max-w-xl mx-auto mb-12">
+                Anda bisa langsung mengobrol dengan saya melalui live chat di pojok kanan bawah halaman ini, atau terhubung melalui media sosial.
+            </p>
+            <div class="text-center mt-12">
+                <p class="mb-4">Terhubung dengan saya di media sosial:</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="https://www.instagram.com/agaa.pd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-400 text-3xl transition-colors duration-300"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/Agassanity?locale=id_ID" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-400 text-3xl transition-colors duration-300"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@agaaaa505?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-sky-400 text-3xl transition-colors duration-300"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800">
+        <div class="container mx-auto text-center p-6 text-slate-500">
+            <p>&copy; 2024 Rahmat Surya Putra Dilaga. Dibuat dengan <i class="fa-solid fa-heart text-red-500"></i> dan Tailwind CSS.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+
+     <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66858e3e9d7f358570d6f353/1i1tqdk1e';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+</body>
+</html>
